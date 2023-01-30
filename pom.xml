@@ -4,9 +4,11 @@
     <artifactId>Puranas</artifactId>
     <groupId>com.literature</groupId>
     <name>${project.artifactId}</name>
-    <version>3.8.6</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
     <properties>
+        <puranas.version>1.0.0</puranas.version>
+
         <spring-boot.version>3.0.1</spring-boot.version>
         <spring-cloud.version>2022.0.0</spring-cloud.version>
         <spring-cloud-alibaba.version>2022.0.0.0-RC1</spring-cloud-alibaba.version>
@@ -14,4 +16,8 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
+    <modules>
+        <module>Puranas-core</module>
+        <module>Puranas-common</module>
+    </modules>
 </project>

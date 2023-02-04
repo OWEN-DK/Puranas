@@ -12,6 +12,12 @@
 
     <artifactId>Puranas-common</artifactId>
     <version>${puranas.version}</version>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>9.0.69</version>
+        </dependency>
+    </dependencies>
 
 </project>

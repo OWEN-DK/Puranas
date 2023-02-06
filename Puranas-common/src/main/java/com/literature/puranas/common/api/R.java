@@ -46,5 +46,21 @@ public class R<T> implements Serializable {
     public static <T> R<T> success() {
         return restReturn(ReturnCode.SUCCESS.getCode(), null, null);
     }
+    public static <T> R<T> success(T data) {
+        return restReturn(ReturnCode.SUCCESS.getCode(),data, null);
+    }
+    public static <T> R<T> success(T data, String msg) {
+        return restReturn(ReturnCode.SUCCESS.getCode(),data,  msg);
+    }
+    public static <T> R<T> fail(String msg) {
+        return restReturn(ReturnCode.FAILURE.getCode(),null,  msg);
+    }
 
+    public static <T> R<T> fail(T data) {
+        return restReturn(ReturnCode.FAILURE.getCode(),data, null);
+    }
+
+    public static <T> R<T> fail(T data, String msg) {
+        return restReturn(ReturnCode.FAILURE.getCode(),data,  msg);
+    }
 }
